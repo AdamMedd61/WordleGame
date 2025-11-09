@@ -36,3 +36,82 @@ button {
 button:hover {
   background: gray;
 }
+ button {
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px 20px;
+    }
+    .selected {
+      background-color: green;
+      color: white;
+    }
+input[type="radio"] {
+  display: none;
+}
+
+/* Labels styled as buttons */
+.col-label {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 5px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.2s;
+  user-select: none;
+  text-align: center;
+}
+
+/* Hover effect */
+.col-label:hover {
+  background-color: green;
+  color: #fff;
+}
+
+/* Selected state */
+input[type="radio"]:checked + .col-label {
+  background-color: darkgreen;
+  color: #fff;
+  border-color: rgb(60, 208, 60);
+}
+
+/* Start button styling */
+#startBtn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#startBtn:hover {
+  background-color: darkgreen;
+}
+.row {
+  margin-bottom: 10px;
+}
+
+.col {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 24px;
+  margin-right: 5px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.col:focus {
+  border-color: #2196F3;
+  outline: none;
+}

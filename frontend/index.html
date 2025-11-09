@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Word Rows</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Select Columns</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Select Number of Letters</h1>
 
-    <form id="form" onsubmit="return false" method="post">
-        <div id="rows-container">
-        </div>
-
-        <button id="submit">Submit</button>
-        <button id="restart" type="button">Restart</button>
-    </form>
+        <input type="radio" name="cols" id="col4" value="4">
+        <label for="col4" class="col-label">4 Columns</label>
+        <input type="radio" name="cols" id="col5" value="5">
+        <label for="col5" class="col-label">5 Columns</label>
+        <input type="radio" name="cols" id="col6" value="6">
+        <label for="col6" class="col-label">6 Columns</label>
+  <br><br>
+    <button id="startBtn">Start</button>
 
     <script src="script.js"></script>
 </body>
